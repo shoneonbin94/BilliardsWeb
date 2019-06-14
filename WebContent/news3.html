@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome To Billiards!!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+function tableListener3() 
+{
+	 var rows3 = document.getElementById("table3").rows;
+	    for (i = 0; i < rows3.length; i++) {
+	        rows3[i].onclick = function(){ return function(){
+	        	   var winObj3 = window.open("","newWin", "width=1000, heigth=680");
+	               var id3 = this.cells[0].innerHTML;
+	      		 
+	               if(id3 == 15)  			 //2018 잔카 챔피언십 아시아 3쿠션 오픈 당구대회 개최!
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1823";  
+	               }
+	               else if(id3 == 16)			//제11회 대한체육회장배 2015 전국당구대회 개최
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1432"; 
+	               }
+	               else if(id3 == 17)   		//제96회 전국체육대회 개막!
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1430"; 
+	               }
+	               else if(id3 == 18)			//2015 대한당구연맹회장배 전국당구대회 개막!
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1429"; 
+	               }
+	               else if(id3 == 19)			//2015 CBSA 롄윈강 국제9볼오픈 김가영 우승
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1427"; 
+	               }
+	               else if(id3 == 20)			//조재호 2015 호치민 세계3쿠션월드컵 공동3위!
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1426"; 
+	               }
+	               else if(id3 == 21)			//김가영 제1회 경기도당구연맹회장배 GPT 한국여자포켓볼 챔피언십 우승!
+	               {
+	            	   winObj3.location.href = "http://www.kbfsports.or.kr:/front/bbs/bbsView.do?bbsSn=16&nttSn=1424"; 
+	               }
+	        };}(rows3[i]);
+	    }
+}
+window.onload = tableListener3();
+</script>
+<!-- 스크립트 부분 끝 -->
+
+
+<!-- 스타일 부분 시작-->
+<style>
+body,h1 {
+	font-family: "Raleway", Arial, sans-serif
+}
+h1 {
+	letter-spacing: 6px;
+}
+.w3-row-padding img {
+	margin-bottom: 15px
+}
+</style>
+<!-- 스타일 부분 끝 -->
+
+
+<!-- 바디 부분 시작 -->
+<body>
+<div class="w3-content" style="max-width:1500px">
+
+<!-- 헤더 부분 시작 -->
+<header class="w3-panel w3-center" style="padding:128px 16px">
+  <h1 class="w3-xlarge w3-animate-fading">Welcome To Billiards</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="news.html" class="w3-bar-item w3-button w3-light-grey">News</a>
+      <a href="ranking.html" class="w3-bar-item w3-button">Ranking</a>
+      <a href="video.html" class="w3-bar-item w3-button">Video</a>
+      <a href="kinds.html" class="w3-bar-item w3-button">Kinds</a>
+      <a href="ask.html" class="w3-bar-item w3-button">Ask</a>
+    </div>
+  </div>
+  
+  
+  <!-- 메인 사진 부분 -->
+ <div class="w3-row-padding w3-grayscale-min">
+	<!-- 테이블 넣어서 뉴스 만들자 -->
+	<div class="w3-container">
+  <h2 class="w3-left">최근소식</h2>
+  <table class="w3-table w3-striped w3-bordered" name = "table3" id = "table3" onclick = "javascript:tableListener3()">
+     <tr>
+      <th>No</th>
+      <th>제목</th>
+      <th>작성자</th>
+      <th>작성일</th>
+      <th>조회</th>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2018 잔카 챔피언십 아시아 3쿠션 오픈 당구대회 개최!</td>
+      <td>대한당구연맹</td>
+      <td>2018-11-21</td>
+      <td>1546</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>제11회 대한체육회장배 2015 전국당구대회 개최</td>
+      <td>대한당구연맹</td>
+      <td>2015-11-03</td>
+      <td>2546</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>제96회 전국체육대회 개막!</td>
+      <td>대한당구연맹</td>
+      <td>2015-10-20</td>
+      <td>1740</td>
+    </tr>
+     <tr>
+      <td>18</td>
+      <td>2015 대한당구연맹회장배 전국당구대회 개막!</td>
+      <td>대한당구연맹</td>
+      <td>2015-10-07</td>
+      <td>1500</td>
+    </tr>
+     <tr>
+      <td>19</td>
+      <td>2015 CBSA 롄윈강 국제9볼오픈 김가영 우승</td>
+      <td>대한당구연맹</td>
+      <td>2015-09-05</td>
+      <td>1652</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>조재호 2015 호치민 세계3쿠션월드컵 공동3위!</td>
+      <td>대한당구연맹</td>
+      <td>2015-08-16</td>
+      <td>1150</td>
+    </tr>
+      <tr>
+      <td>21</td>
+      <td>김가영 제1회 경기도당구연맹회장배 GPT 한국여자포켓볼 챔피언십 우승!</td>
+      <td>대한당구연맹</td>
+      <td>2015-05-20</td>
+      <td>1968</td>
+    </tr>
+  </table>
+</div>
+	
+ </div> 
+  
+  
+</header>
+<!-- 헤더 부분 끝 -->
+
+
+</div>
+
+
+ <!-- 페이지 쪽수 번호 -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="news.html">1</a>
+      <a class="w3-button w3-hover-black" href="news2.html">2</a>
+      <a class="w3-button w3-black" href="news3.html">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+
+<!-- 페이지 맨 아래부분 시작 -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+  <a href="https://www.facebook.com/" class="mx-2"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/?hl=ko" class="mx-2">
+  <i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.snapchat.com/" class="mx-2">
+  <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://www.pinterest.co.kr/" class="mx-2">
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/?lang=ko" class="mx-2">
+  <i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://kr.linkedin.com/" class="mx-2">
+  <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p>Powered by <a href="index.html" target="_blank" class="w3-hover-text-green">Welcome To Billiards</a></p>
+</footer>
+<!-- 페이지 맨 아래부분 끝 -->
+
+
+</body>
+<!-- 바디부분 끝 -->
+</html>

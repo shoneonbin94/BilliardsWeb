@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome To Billiards!!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- 스크립트 부분 시작 -->
+<script type="text/javascript">
+function tableRankListener() 
+{
+	 var rows = document.getElementById("tableRank1").rows;
+	    for (i = 0; i < rows.length; i++) {
+	        rows[i].onclick = function(){ return function(){
+	               var id = this.cells[0].innerHTML;
+	      		   //alert(id);
+	               if(id == "2018 전국선수권(포천)")  			 
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=Lbc8COupOok";
+	            	   
+	               }
+	               else if(id == "2018 인제 오미자베")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=pBjisyzVWNw&t=3s"; 
+	               }
+	               else if(id == "2018 국토정중앙배")   	
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=8dHjxK0q90k"; 
+	               }
+	               else if(id == "2018 대한당구연맹회장배")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=4onxBhhTtbA"; 
+	               }
+	               else if(id == "2018 KBF슈퍼컵 3쿠션 토너먼트")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=TAOs6wzgPDY"; 
+	               }
+	               else if(id == "2018 대한체육회장배")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=n83oeb7Hht0"; 
+	               }
+	               else if(id == "제 7회 부산광역시장배")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=K_nPUJd8wQ4"; 
+	               }
+	               else if(id == "2018 영철통강배")			
+	               {
+	            	   ifrm.location.href = "https://www.youtube.com/watch?v=0iXbipfU1m4"; 
+	               }
+	        };}(rows[i]);
+	    }
+}
+window.onload = tableRankListener();
+</script>
+<!-- 스크립트 부분 끝 -->
+
+
+<!-- 스타일 부분 시작-->
+<style>
+body,h1 {
+	font-family: "Raleway", Arial, sans-serif
+}
+h1 {
+	letter-spacing: 6px;
+}
+.w3-row-padding img {
+	margin-bottom: 15px
+}
+</style>
+<!-- 스타일 부분 끝 -->
+
+
+<!-- 바디 부분 시작 -->
+<body>
+<div class="w3-content" style="max-width:1500px">
+
+<!-- 헤더 부분 시작 -->
+<header class="w3-panel w3-center" style="padding:128px 16px">
+  <h1 class="w3-xlarge w3-animate-fading">Welcome To Billiards</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="news.html" class="w3-bar-item w3-button">News</a>
+      <a href="ranking.html" class="w3-bar-item w3-button w3-light-grey">Ranking</a>
+      <a href="video.html" class="w3-bar-item w3-button">Video</a>
+      <a href="kinds.html" class="w3-bar-item w3-button">Kinds</a>
+      <a href="ask.html" class="w3-bar-item w3-button">Ask</a>
+    </div>
+  </div>
+  
+  
+  <!-- 메인 사진 부분 -->
+ <div class="w3-row-padding w3-center">
+   <div class="w3-half">
+   <p class="w3-green">3구 랭킹</p>
+    <img src="image/3구랭킹표.jpg" style="width:100%; height:100%;">
+  </div>
+  <div class = "w3-rest">
+  	<p class="w3-green">3구 경기 일정</p>
+  	  <table class="w3-table w3-striped w3-bordered" name = "tableRank1" id = "tableRank1" onclick = "javascript:tableRankListener()">
+    <tr>
+      <th>구분</th>
+      <th>날짜</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>5</th>
+      <th>9</th>
+      <th>17</th>
+      <th>33</th>
+      <th>65</th>
+      <th>129</th>
+      <th>257</th>
+    </tr>
+    <tr>
+      <td>2018 전국선수권(포천)</td>
+      <td>18.3.14~17</td>
+      <td>120</td>
+      <td>95</td>
+      <td>70</td>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>13</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2018 인제 오미자베</td>
+      <td>18.3.27~4.1</td>
+      <td>90</td>
+      <td>71</td>
+      <td>53</td>
+      <td>38</td>
+      <td>23</td>
+      <td>15</td>
+      <td>10</td>
+      <td>7</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2018 국토정중앙배</td>
+      <td>18.5.30~6.3</td>
+      <td>120</td>
+      <td>95</td>
+      <td>70</td>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>13</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+     <tr>
+      <td>2018 대한당구연맹회장배</td>
+      <td>18.7.10~15</td>
+      <td>120</td>
+      <td>95</td>
+      <td>70</td>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>13</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+     <tr>
+      <td>2018 KBF슈퍼컵 3쿠션 토너먼트</td>
+      <td>18.9.28~29</td>
+      <td>120</td>
+      <td>95</td>
+      <td>70</td>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>13</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+      <tr>
+      <td>2018 대한체육회장배</td>
+      <td>18.10.31~11.4</td>
+      <td>120</td>
+      <td>95</td>
+      <td>70</td>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>13</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>제 7회 부산광역시장배</td>
+      <td>18.11.30~12.3</td>
+      <td>90</td>
+      <td>71</td>
+      <td>53</td>
+      <td>38</td>
+      <td>23</td>
+      <td>15</td>
+      <td>10</td>
+      <td>7</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+      <tr>
+      <td>2018 영철통강배</td>
+      <td>18.12.19~23</td>
+      <td>90</td>
+      <td>71</td>
+      <td>53</td>
+      <td>38</td>
+      <td>23</td>
+      <td>15</td>
+      <td>10</td>
+      <td>7</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+  </table>
+  <br/>
+  	<iframe name = "ifrm" width = "700" height = "660"></iframe>
+  </div>  
+ </div> 
+
+</body>
+</div>
+  
+</header>
+<!-- 헤더 부분 끝 -->
+</div>
+
+
+
+
+<!-- 페이지 맨 아래부분 시작 -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+  <a href="https://www.facebook.com/" class="mx-2"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/?hl=ko" class="mx-2">
+  <i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.snapchat.com/" class="mx-2">
+  <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://www.pinterest.co.kr/" class="mx-2">
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/?lang=ko" class="mx-2">
+  <i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://kr.linkedin.com/" class="mx-2">
+  <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p>Powered by <a href="index.html" target="_blank" class="w3-hover-text-green">Welcome To Billiards</a></p>
+</footer>
+<!-- 페이지 맨 아래부분 끝 -->
+
+
+</body>
+<!-- 바디부분 끝 -->
+</html>
